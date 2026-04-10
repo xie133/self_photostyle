@@ -1,0 +1,17 @@
+{
+  "balanced": {
+    "description": "A balanced default mode with readable composition, grounded realism, and clear visual hierarchy."
+  },
+  "messy_ordered_real": {
+    "description": "Stronger subject emphasis, more ordered chaos, more realistic materials and less poster-like stylization."
+  },
+  "single_subject_poetic": {
+    "description": "Cleaner compositions for single-subject images with poetic light, emotional focus, and realistic photographic texture."
+  },
+  "experimental_floral_motion": {
+    "description": "Experimental floral imagery with rotational blur, vortex-like motion, layered petals, and dreamlike but still photographic texture."
+  },
+  "graphic_documentary_silhouette": {
+    "description": "High-contrast documentary-style silhouettes with strong geometry, hard backlight, and rhythmic figure placement."
+  }
+}
