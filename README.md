@@ -96,6 +96,8 @@ Useful options:
 - `--budget-mode`: use `draft` for cheaper exploration or `final` for fuller batches
 - `--count`: number of variants to generate
 
+If `--composition auto` is used, the script will recommend compositions and style modes from the subject matter and record those recommendations in the generation log.
+
 ## 3. Score Generated Images
 
 Score all generated images:
@@ -110,7 +112,11 @@ Score only the latest generated batch:
 python .\score_images.py --latest-batch
 ```
 
-After scoring, the script will ask which images you want to copy back into `my_photos/`.
+After scoring, the script will ask for three feedback buckets: `like`, `okay`, and `dislike`.
+
+- Liked images are copied back into `my_photos/`
+- All feedback is appended to `logs/feedback_history.jsonl`
+- The script prints a summary of which composition rules and style+composition combinations are producing the strongest liked results
 
 ## Style Modes
 

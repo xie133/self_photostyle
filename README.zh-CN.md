@@ -96,6 +96,8 @@ python .\generate_images.py --subject "在这里描述你想生成的画面" --s
 - `--budget-mode`：`draft` 更省成本，`final` 更适合认真挑图
 - `--count`：一次生成多少张变体
 
+如果使用 `--composition auto`，脚本会根据题材自动推荐构图方式和风格模式，并把这些推荐记录进生成日志。
+
 ## 3. 给生成结果打分
 
 给全部生成结果打分：
@@ -110,7 +112,11 @@ python .\score_images.py
 python .\score_images.py --latest-batch
 ```
 
-打分完成后，脚本会询问你要不要把选中的图片复制回 `my_photos/`，方便进入下一轮风格蒸馏。
+打分完成后，脚本会要求你把图片分别归入 `like`、`okay`、`dislike` 三个反馈桶。
+
+- `like` 会被复制回 `my_photos/`
+- 所有反馈都会追加到 `logs/feedback_history.jsonl`
+- 脚本会输出“哪种构图”和“哪种风格+构图组合”更容易得到喜欢结果的统计摘要
 
 ## 风格模式
 
