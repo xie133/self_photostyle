@@ -1,5 +1,7 @@
 ﻿# Self PhotoStyle
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 Distill your personal visual taste from reference photos and use it to guide AI image generation.
 
 `self_photostyle` is a small Python workflow built around Gemini. It helps you turn a folder of reference images into a reusable style library, then use that style language to generate and score new images.
@@ -29,6 +31,7 @@ self_photostyle/
 |- .gitignore
 |- LICENSE
 |- README.md
+|- README.zh-CN.md
 |- requirements.txt
 |- build_style_dataset.py
 |- generate_images.py
